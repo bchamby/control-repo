@@ -14,8 +14,12 @@ class profile::app_server {
     }
   }
 
+  file { 'c:\temp':
+    ensure => 'directory',
+  }
+
   file { 'c:\temp\test.txt':
-    content => 'This is the content of my test file!'
+    content => 'This is the content of my test file!',
   }
 
 }
