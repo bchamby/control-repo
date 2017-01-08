@@ -1,7 +1,5 @@
 class profile::app_server {
 
-  include chocolatey
-
   if $facts['os']['family'] == 'windows' {
     registry_key { 'HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Reliability':
       ensure => present,
@@ -25,7 +23,8 @@ class profile::app_server {
   }
 
   package { 'powershell':
-    ensure   => '5.0.10586.20161216',
+    # ensure   => '5.0.10586.20161216',
+    ensure   => latest,
     provider => 'chocolatey',
     source   => 'http://192.168.34.100/choco/api/v2/',
   }
