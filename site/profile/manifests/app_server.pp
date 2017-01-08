@@ -25,7 +25,7 @@ class profile::app_server {
   package { 'powershell':
     ensure   => '5.0.10586.20161216',
     provider => 'chocolatey',
-    source   => 'http://192.168.34.100/choco/api/v2/package/powershell',
+    source   => 'http://192.168.34.100/choco/api/v2/',
   }
 
 }
