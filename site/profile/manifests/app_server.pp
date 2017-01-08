@@ -1,5 +1,7 @@
 class profile::app_server {
 
+  include chocolatey
+
   if $facts['os']['family'] == 'windows' {
     registry_key { 'HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Reliability':
       ensure => present,
