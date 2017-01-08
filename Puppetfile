@@ -16,9 +16,11 @@ forge "http://forge.puppetlabs.com"
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mod 'puppetlabs/stdlib',    '4.12.0'
-mod 'puppetlabs/accounts',  '1.0.0'
-mod 'puppetlabs/ntp',       '4.2.0'
-mod 'puppetlabs/registry',  '1.1.3'
-mod 'puppet/staging',       '2.0.0'
-mod 'puppetlabs/mysql',     '3.8.0'
+mod 'puppetlabs/stdlib',     '4.12.0'
+mod 'puppetlabs/accounts',   '1.0.0'
+mod 'puppetlabs/ntp',        '4.2.0'
+mod 'puppetlabs/registry',   '1.1.3'
+mod 'puppet/staging',        '2.0.0'
+mod 'puppetlabs/mysql',      '3.8.0'
+mod 'puppetlabs-powershell', '2.1.0'
+mod 'chocolatey-chocolatey', '1.2.6'
