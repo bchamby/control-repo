@@ -22,4 +22,10 @@ class profile::app_server {
     content => 'This is the content of my test file!',
   }
 
+  package { 'powershell':
+    ensure   => '5.0.10586.20161216',
+    provider => 'chocolatey',
+    source   => 'http://192.168.34.100/choco/api/v2/package/powershell',
+  }
+
 }
