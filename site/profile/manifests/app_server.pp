@@ -26,7 +26,7 @@ class profile::app_server {
     # ensure   => '5.0.10586.20161216',
     ensure   => latest,
     provider => 'chocolatey',
-    source   => 'http://192.168.34.100/choco/',
+    source   => 'http://192.168.34.100/choco/nuget/Packages/PowerShell/',
   }
 
 }
